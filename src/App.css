@@ -13,6 +13,10 @@
   color: white;
 }
 
+#forecast {
+  font-weight: 500;
+}
+
 #forecast img {
   width: 40px;
   height: 40px;
@@ -28,4 +32,10 @@
   color: white;
   font-weight: bold;
   text-shadow: 0 0 3px black;
+}
+
+.five-day-date {
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-shadow: 0 0 3px gray;
 }
