@@ -70,7 +70,7 @@ class Search extends Component {
   render() {
     console.log(this.state.forecastData);
     return (
-      <div className="my-4">
+      <div className="search-main pt-3">
         <Input
           type="text"
           className="col-sm-4 mx-auto mb-2 text-center"

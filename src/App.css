@@ -17,3 +17,15 @@
   width: 40px;
   height: 40px;
 }
+
+.search-main {
+  background: rgb(60, 45, 160);
+}
+
+#five-day-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 3px black;
+}

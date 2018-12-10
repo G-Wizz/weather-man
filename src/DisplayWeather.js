@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const DisplayWeather = props => {
   return (
-    <WeatherDisplay className="col-sm-4 mx-auto mt-4">
+    <WeatherDisplay className="text-light weather-main col-sm-4 mx-auto mt-4">
       {props.currentTemp && (
         <li>Current Temperature: {props.currentTemp}&deg;</li>
       )}
@@ -29,4 +29,6 @@ export default DisplayWeather;
 
 const WeatherDisplay = styled.div`
   list-style-type: none;
+  font-weight: bold;
+  padding: 10px 0;
 `;
