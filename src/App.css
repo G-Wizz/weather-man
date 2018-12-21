@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Life+Savers:700|Poppins");
+
 .App {
   text-align: center;
 }
 
 .App-header {
+  font-family: "Life Savers", cursive;
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
@@ -11,6 +14,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
 }
 
 #forecast {
@@ -27,8 +34,9 @@
 }
 
 #five-day-title {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
+  font-family: "Life Savers", cursive;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 3px black;
@@ -38,4 +46,9 @@
   font-weight: bold;
   padding-bottom: 5px;
   text-shadow: 0 0 3px gray;
+}
+
+#displayCity {
+  font-size: 20px;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }

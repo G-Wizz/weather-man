@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FormatDate from "./FormatDate";
 
 const DisplayForecast = props => {
+  console.log("forecast data", props.location);
   return (
     <ForecastDisplay>
       {props.forecastData && (
@@ -14,20 +15,25 @@ const DisplayForecast = props => {
         props.forecastData
           .filter((ele, i) => i % 8 === 0)
           .map((data, index) => (
-            <ForecastBox className="bg-primary col-lg-12 col-sm-4">
-              <React.Fragment key={index}>
+            <ForecastBox key={index} className="bg-primary col-lg-12 col-sm-4">
+              <React.Fragment>
                 <div id="forecast" className="my-4">
+                  <li id="displayCity" className="font-weight-bold">
+                    {props.location}
+                  </li>
                   <FormatDate getDate={data.dt_txt} />
-                  <li>Temperature: {data.main.temp}</li>
+                  <li>Temperature: {data.main.temp}&deg;</li>
                   <li>Weather: {data.weather[0].main}</li>
-                  <li>Hi: {data.main.temp_max}</li>
-                  <li>Low: {data.main.temp_min}</li>
+                  <li>Hi: {data.main.temp_max}&deg;</li>
+                  <li>Low: {data.main.temp_min}&deg;</li>
                   <li>Wind Speed: {data.wind.speed}</li>
                   <li>Humidity: {data.main.humidity}</li>
                   <li>
                     <img
                       src={
-                        "http://openweathermap.org/img/w/" + props.icon + ".png"
+                        "https://openweathermap.org/img/w/" +
+                        data.weather[0].icon +
+                        ".png"
                       }
                       alt=""
                     />
