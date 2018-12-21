@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a simple weather app created using React, Bootstrap and Moment.js
 
+This has bene updated so that the weather is searchabel by zip or city.
+
+Still need to check for cities that do not exist or invalid entries
+
 ## Available Scripts
 
 In the project directory, you can run:

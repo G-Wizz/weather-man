@@ -3,9 +3,6 @@
 # api key
 .env
 
-# 2 components that are incomplete that are being worked on
-ZipSearch.js
-CitySearch.js
 
 # dependencies
 /node_modules
